@@ -11,8 +11,7 @@
 #include "dict-eng.h"
 using namespace std;
 
-
-// Add prototypes of helper functions here
+// Helper function prototype
 void makeWords(std::string& current,
                const std::string& floating,
                const std::set<std::string>& dict, 
@@ -43,7 +42,7 @@ std::set<std::string> wordle(
     return results; 
 }
 
-// Define any helper functions here
+// Helper function definition 
 void makeWords(std::string& current, const std::string& floating,
                const std::set<std::string>& dict, 
                std::set<std::string>& results, size_t index,

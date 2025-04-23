@@ -20,7 +20,7 @@ using namespace std;
 static const Worker_T INVALID_ID = (unsigned int)-1;
 
 
-// Add prototypes for any helper functions here
+// Helper function prototype
 bool helper(const AvailabilityMatrix& avail, 
                const size_t dailyNeed,
                const size_t maxShifts,
@@ -28,7 +28,7 @@ bool helper(const AvailabilityMatrix& avail,
                std::vector<size_t>& numShifts,
                size_t day, size_t slot);
 
-// Add your implementation of schedule() and other helper functions here
+// Schedule function
 bool schedule(
     const AvailabilityMatrix& avail,
     const size_t dailyNeed,
@@ -62,7 +62,7 @@ bool schedule(
 }
 
 
-// helper function implementation
+// Helper function implementation
 bool helper(const AvailabilityMatrix& avail, 
                const size_t dailyNeed,
                const size_t maxShifts,
